@@ -1,0 +1,121 @@
+{
+  "company": {
+    "name": "TSM Advisory Services",
+    "tagline": "Professional Accounting & Advisory Firm",
+    "description": "TSM Advisory Services provides comprehensive audit, tax, advisory, and business consulting solutions to help your organization achieve sustainable growth and compliance excellence.",
+    "founded": "2017",
+    "experience": "7+"
+  },
+  "contact": {
+    "address": "Harare, Zimbabwe",
+    "city": "Harare, Zimbabwe",
+    "phone": "+263 77 483 8777",
+    "whatsapp": "263774838777",
+    "email": "jurandaconsultancy@gmail.com",
+    "website": "https://brendon1109.github.io/tsm-advisory-services"
+  },
+  "social": {
+    "facebook": "#",
+    "linkedin": "#",
+    "twitter": "#"
+  },
+  "services": [
+    {
+      "id": "audit",
+      "name": "Audit & Assurance Services",
+      "icon": "fas fa-clipboard-check",
+      "items": [
+        "Financial statement audits",
+        "Review and compilation services",
+        "Agreed-upon procedures"
+      ]
+    },
+    {
+      "id": "tax",
+      "name": "Tax Services",
+      "icon": "fas fa-calculator",
+      "items": [
+        "Tax planning and compliance",
+        "Tax return preparation",
+        "Tax dispute resolution"
+      ]
+    },
+    {
+      "id": "advisory",
+      "name": "Advisory Services",
+      "icon": "fas fa-lightbulb",
+      "items": [
+        "Financial planning and budgeting",
+        "Business valuation",
+        "Mergers and acquisitions",
+        "Restructuring services"
+      ]
+    },
+    {
+      "id": "risk",
+      "name": "Risk Management & Governance",
+      "icon": "fas fa-shield-alt",
+      "items": [
+        "Internal audit services",
+        "Risk assessment and management",
+        "Corporate governance advisory"
+      ]
+    },
+    {
+      "id": "compliance",
+      "name": "Compliance & Regulatory",
+      "icon": "fas fa-balance-scale",
+      "items": [
+        "Regulatory compliance",
+        "AML and KYC services",
+        "Data protection and privacy"
+      ]
+    },
+    {
+      "id": "transaction",
+      "name": "Transaction Services",
+      "icon": "fas fa-handshake",
+      "items": [
+        "Due diligence",
+        "Deal structuring",
+        "Transaction support"
+      ]
+    },
+    {
+      "id": "reporting",
+      "name": "Financial Reporting",
+      "icon": "fas fa-file-invoice-dollar",
+      "items": [
+        "Financial statement preparation",
+        "Accounting policy development",
+        "Financial analysis"
+      ]
+    },
+    {
+      "id": "outsourcing",
+      "name": "Business Process Outsourcing",
+      "icon": "fas fa-cogs",
+      "items": [
+        "Accounting and bookkeeping",
+        "Payroll processing",
+        "AP/AR management"
+      ]
+    },
+    {
+      "id": "capacity",
+      "name": "Capacity Building",
+      "icon": "fas fa-graduation-cap",
+      "items": [
+        "Training of staff",
+        "Board induction",
+        "Fundraising support",
+        "Monitoring & evaluation"
+      ]
+    }
+  ],
+  "stats": {
+    "years": "7+",
+    "clients": "500+",
+    "services": "9"
+  }
+}
