@@ -68,16 +68,18 @@ body {
 }
 
 .nav-link.cta-button {
-    background: #2563eb;
+    background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
     color: white;
     padding: 0.5rem 1.5rem;
     border-radius: 25px;
     transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(78, 205, 196, 0.3);
 }
 
 .nav-link.cta-button:hover {
-    background: #1d4ed8;
+    background: linear-gradient(135deg, #44A08D 0%, #4ECDC4 100%);
     transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(78, 205, 196, 0.4);
 }
 
 .hamburger {
@@ -97,9 +99,26 @@ body {
 /* Hero Section */
 .hero {
     padding: 120px 0 80px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 50%, #45B7D1 100%);
     color: white;
     overflow: hidden;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255, 107, 107, 0.1) 0%, rgba(78, 205, 196, 0.1) 50%, rgba(69, 183, 209, 0.1) 100%);
+    animation: gradientShift 8s ease infinite;
+}
+
+@keyframes gradientShift {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
 }
 
 .hero-container {
@@ -146,13 +165,16 @@ body {
 }
 
 .btn-primary {
-    background: white;
-    color: #2563eb;
+    background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
 }
 
 .btn-primary:hover {
+    background: linear-gradient(135deg, #FF8E53 0%, #FF6B6B 100%);
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
 }
 
 .btn-secondary {
@@ -241,23 +263,25 @@ body {
 }
 
 .service-card {
-    background: white;
+    background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 15px rgba(69, 183, 209, 0.1);
     transition: all 0.3s ease;
-    border: 1px solid #e2e8f0;
+    border: 1px solid rgba(69, 183, 209, 0.1);
 }
 
 .service-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 40px rgba(69, 183, 209, 0.2);
+    border-color: #45B7D1;
+    background: linear-gradient(145deg, #ffffff 0%, #ebf8ff 100%);
 }
 
 .service-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #45B7D1 0%, #96CEB4 100%);
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -265,6 +289,14 @@ body {
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
     color: white;
+    box-shadow: 0 4px 15px rgba(69, 183, 209, 0.3);
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    background: linear-gradient(135deg, #96CEB4 0%, #FFEAA7 100%);
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(150, 206, 180, 0.4);
 }
 
 .service-card h3 {
@@ -296,7 +328,20 @@ body {
 /* About Section */
 .about {
     padding: 80px 0;
-    background: white;
+    background: linear-gradient(135deg, #FFEAA7 0%, #FDCB6E 50%, #E17055 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 1;
 }
 
 .about-content {
@@ -304,6 +349,8 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 .about-text h2 {
@@ -393,13 +440,28 @@ body {
 /* Contact Section */
 .contact {
     padding: 80px 0;
-    background: #f8fafc;
+    background: linear-gradient(135deg, #74B9FF 0%, #0984E3 50%, #6C5CE7 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 1;
 }
 
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
+    position: relative;
+    z-index: 2;
 }
 
 .contact-info {
@@ -421,13 +483,21 @@ body {
 .contact-icon {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover .contact-icon {
+    background: linear-gradient(135deg, #4ECDC4 0%, #FF6B6B 100%);
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(78, 205, 196, 0.4);
 }
 
 .contact-details h4 {
